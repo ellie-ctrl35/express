@@ -6,18 +6,6 @@ const {logger} = require ('./middleware/logEvents');
 const  errorHandler  = require ('./middleware/errorHandler');
 const cors = require('cors')
 
-const whitelist = ['http://www.mywebsite.com','http://127.0.0.1:500','http://localhost:3500']
-const corsOptions = {
-    origin:(origin,callback) =>{
-    if (whitelist.indexOf(origin) !== -1|| !origin){
-        callback(null,true)
-    }else{
-        callback(new Error('Not allowed by CORS'));
-    }
- },
- optionsSuccessStatus: 200
-}
-
 app.use(cors(corsOptions));
 
 app.use(logger);
