@@ -1,6 +1,9 @@
 const whitelist = [
-    'http://www.mywebsite.com','http://127.0.0.1:500','http://localhost:3500']
-  const corsOptions = {
+    'http://www.mywebsite.com',
+    'http://127.0.0.1:500',
+    'http://localhost:3500']
+  
+    const corsOptions = {
     origin:(origin,callback) =>{
     if (whitelist.indexOf(origin) !== -1|| !origin){
         callback(null,true)

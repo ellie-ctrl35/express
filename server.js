@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 3500;
 const {logger} = require ('./middleware/logEvents');
 const  errorHandler  = require ('./middleware/errorHandler');
 const cors = require('cors')
+const corsOptions = require('./config/corsOptions')
 
 app.use(cors(corsOptions));
 
