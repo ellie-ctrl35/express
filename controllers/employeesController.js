@@ -1,15 +1,27 @@
-const data = {}
-data.employees = require('../../data/employees.json');
+const { json } = require('express');
+
+const data = {
+    employees : require('../data/employees.json'),
+    setEmployee: function (data) {
+      this.employees = data   
+    }
+}
 
 const getAllEmployees = (req,res) =>{
     res.json(data.employees);
 }
 
 const createNewEmployees = (req,res) =>{
-    res.json({
-        "firstname":req.body.firstname,
-        "lastname": req.body.lastname
-    });
+   const newEmployee = {
+    id: data.employees[data.employees.length-1].id + 1 || 1,
+    firstname:req.body.firstname,
+    lastname: req.body.lastname
+   }
+   if (!newEmployee.firstname|| !newEmployee.lastname) {
+    return res.status(400,json({'message':'First and last messages are required'}));
+   }
+   data.setEmployee([...data.employees, newEmployee]);
+   res.status(201).json(data.employees);
 }
 
 const updateEmployees = (req,res) =>{
