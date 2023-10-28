@@ -1,0 +1,30 @@
+20231025	00:06:55	33a17e7e-7651-435c-8059-4a3cefe0b6fc	/	GET
+20231025	00:06:56	b5bab018-652b-4efd-91af-39501712eb64	/css/style.css	GET
+20231025	00:06:56	2cd06fd2-881f-4860-b468-321828f59130	/favicon.ico	GET
+20231026	02:05:24	4231373c-efd0-42df-afb5-eb578d9a3675	GET	undefined	/index
+20231026	02:05:24	e7f6f0c7-2e3a-4434-9704-a3bcc9a5a4d4	GET	undefined	/css/style.css
+20231026	02:10:45	46e6efd5-4dd3-4356-a08c-c639e3a6c686	GET	undefined	/index
+20231026	02:10:45	8f2a93e0-87a8-45b3-8dc1-9f92a505f88a	GET	undefined	/css/style.css
+20231026	21:22:50	eaa5f1b1-3b70-41c8-a404-d896b1f6d544	GET	undefined	/
+20231026	21:22:50	7bf690aa-7d51-4646-a0df-85ab8555698d	GET	undefined	/css/style.css
+20231026	21:22:50	e8cc2c14-5e1b-4060-9bd2-b240370277f3	GET	undefined	/favicon.ico
+20231026	21:22:56	8e3fd62d-e23a-445a-942b-435a79b11729	GET	undefined	/index
+20231026	21:22:56	e9703b78-fc6c-4566-89b7-4152aed8dc07	GET	undefined	/css/style.css
+20231026	22:09:58	07506dbb-9016-4d3a-b4ba-e7da75a7c702	GET	undefined	/index
+20231026	22:09:58	929537a8-6964-4543-9ed6-89caaf3ec5d3	GET	undefined	/css/style.css
+20231026	22:10:09	98e08516-fd42-49e2-873e-4a40b71b2c73	GET	undefined	/subdir
+20231026	23:09:29	7af62e79-b3cd-415f-8b31-82f6377d2707	GET	undefined	/index
+20231026	23:09:29	a4faedaf-2fb2-4445-bfcd-c29b72cb4712	GET	undefined	/css/style.css
+20231026	23:09:39	8935a7f8-f088-489a-b43e-358a25f95774	GET	undefined	/new-page.html
+20231026	23:09:39	a0314f1e-b86a-4194-871d-e476fc8675c0	GET	undefined	/public/css/style.css
+20231026	23:09:40	6b285245-3198-45ec-aaf3-093013e00e90	GET	undefined	/img/img1.jpg
+20231028	01:44:58	c0df0645-3d91-4ae3-a0f2-60b4c7523b68	GET	undefined	/
+20231028	01:44:58	9094391e-8611-404c-a665-7c0036235806	GET	undefined	/css/style.css
+20231028	01:44:58	6886a5fc-74a9-428c-b1fe-868d968188cd	GET	undefined	/favicon.ico
+20231028	01:47:20	7ac806f1-9d7c-44b3-8aa9-50d4850280a4	GET	undefined	/employees
+20231028	01:49:22	15045434-305b-4438-bcbd-b1176c1952b4	POST	undefined	/employees
+20231028	01:54:39	ef6a7803-2b9f-40c9-8827-243ef4263f50	POST	undefined	/employees
+20231028	01:56:53	99e890a7-f4e2-42ee-8d82-b667c1bf5c82	PUT	undefined	/employees
+20231028	01:58:30	ddf6996c-bd08-4e92-ae09-3f66ac21fdfb	PUT	undefined	/employees
+20231028	02:00:39	a303d5d4-f6b9-4c56-9fed-fd8ef3c72b74	DELETE	undefined	/employees
+20231028	02:01:33	52185c3f-e233-4f43-b349-52e9a317c444	GET	undefined	/employees/1
