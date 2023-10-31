@@ -28,3 +28,5 @@
 20231028	01:58:30	ddf6996c-bd08-4e92-ae09-3f66ac21fdfb	PUT	undefined	/employees
 20231028	02:00:39	a303d5d4-f6b9-4c56-9fed-fd8ef3c72b74	DELETE	undefined	/employees
 20231028	02:01:33	52185c3f-e233-4f43-b349-52e9a317c444	GET	undefined	/employees/1
+20231031	12:05:12	1332d4a6-b206-4a52-be35-918345d90311	POST	undefined	/register
+20231031	12:05:31	181baf97-103f-4f68-9448-7439daf145e5	POST	undefined	/register

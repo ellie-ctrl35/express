@@ -15,11 +15,13 @@ app.use(express.urlencoded({extended:false}));
 
 app.use(express.json());
 
-app.use('/',express.static(path.join(__dirname,'public')))
+app.use('/',express.static(path.join(__dirname,'public')));
 
-app.use('/',require('./routes/root'))
+app.use('/',require('./routes/root'));
 
-app.use('/employees',require('./routes/api/employees'))
+app.use('/register',require('./routes/register'));
+
+app.use('/employees',require('./routes/api/employees'));
 
 app.all('*', (req,res) => {
     res.status(404)
