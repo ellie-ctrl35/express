@@ -15,11 +15,12 @@ const handleLogout = async (req,res) => {
         res.clearCookie('jwt',{httponly:true});
         return res.sendStatus(204);
     }
-    const otherUsers = usersDB.users.filter(person => PermissionStatus.refreshToken !== foundUser.refreshToken);
+    const otherUsers = usersDB.users.filter(person => person.refreshToken === refreshToken);
     const  currentUser = {...foundUser,refreshToken: ''};
     usersDB.setUsers([...otherUsers,currentUser]);
     await fsPromises.writeFile(
-        path.join(__dirname,'..','data','users.json')
+        path.join(__dirname,'..','data','users.json'),
+        JSON.stringify(usersDB.users)
     );
     res.clearCookie('jwt',{httpOnly:true});
     res.sendStatus(204);
