@@ -34,7 +34,8 @@ const handleLogin = async (req,res) => {
             path.join(__dirname,'..','data','users.json'),
             JSON.stringify(usersDB.users)
         );
-        res.json({'success' : `User ${user} is logged in`});
+        res.cookie('jwt',refreshToken,{httpOnly:true, maxAge:24*60*60*1000});
+        res.json({accessToken});
         console.log('Logged in');   
     }
     else{
