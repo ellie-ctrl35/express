@@ -72,3 +72,5 @@
 20231102	07:43:27	8707896a-ba5f-4203-97d2-d7628bea3c9b	POST	undefined	/auth
 20231102	07:43:47	05b660c4-3006-4dae-808b-3d3bc11d3f36	GET	undefined	/employees
 20231102	07:44:23	550c060b-c3f8-45d4-adbb-70caf26a8e57	GET	undefined	/employees
+20231102	08:30:29	c5b9e9c6-67ae-4b1e-94d1-78e8f24baf4e	POST	undefined	/auth
+20231102	08:32:50	36b26aff-4ccf-43ff-aed0-1a0d657c0a30	GET	undefined	/employees
