@@ -1,10 +1,7 @@
-const whitelist = [
-    'http://www.mywebsite.com',
-    'http://127.0.0.1:500',
-    'http://localhost:3500']
+const whitelist = require('./allowedOrigins')
   
-    const corsOptions = {
-    origin:(origin,callback) =>{
+const corsOptions = {
+  origin:(origin,callback) =>{
     if (whitelist.indexOf(origin) !== -1|| !origin){
         callback(null,true)
     }else{
@@ -13,3 +10,5 @@ const whitelist = [
    },
  optionsSuccessStatus: 200
 }
+
+module.exports = corsOptions;

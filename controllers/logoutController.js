@@ -12,7 +12,7 @@ const handleLogout = async (req,res) => {
     const refreshToken = cookies.jwt;
     const foundUser = usersDB.users.find(person => person.refreshToken === refreshToken);
     if (!foundUser) {
-        res.clearCookie('jwt',{httponly:true});
+        res.clearCookie('jwt',{httponly:true,secure:'true',sameSite:'None'});
         return res.sendStatus(204);
     }
     const otherUsers = usersDB.users.filter(person => person.refreshToken === refreshToken);
@@ -22,7 +22,7 @@ const handleLogout = async (req,res) => {
         path.join(__dirname,'..','data','users.json'),
         JSON.stringify(usersDB.users)
     );
-    res.clearCookie('jwt',{httpOnly:true});
+    res.clearCookie('jwt',{httpOnly:true,sameSite:'None',secure:'true'});
     res.sendStatus(204);
 }
 
